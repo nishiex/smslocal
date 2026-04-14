@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+}
+
+
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  
+
+}
+
+@keyframes fadeYellow {
+  0% {
+    opacity: 0;
+    color: #ff0; /* bright yellow */
+  }
+  50% {
+    opacity: 0.5;
+    color: #ff0; /* stays yellow */
+  }
+  100% {
+    opacity: 1;
+    color: #ff0; /* fully visible yellow */
+  }
+}
+
+.animate-yellow {
+  animation: fadeYellow 3s ease-in-out infinite;
+}
+
+
+
+
+
+
