@@ -47,7 +47,10 @@ body {
   animation: fadeYellow 3s ease-in-out infinite;
 }
 
+.bg-ground{
+background: url("https://ik.imagekit.io/nishit560/Desktop%20-%201.png");
 
+}
 
 
 
